@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         DataOutputStream outputStream = null;
         InputStream response = null;
         try{
-            Process su = Runtime.getRuntime().exec("su");
+            Process su = Runtime.getRuntime().exec("");
             outputStream = new DataOutputStream(su.getOutputStream());
             response = su.getInputStream();
 
